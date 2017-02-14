@@ -30,7 +30,7 @@ plt.plot(tracex, tracey, 'ro')  # plot red dots
 plt.text(.25,.9, 'f(%f) = %r' % (tracex[-1], tracey[-1]), transform = ax.transAxes, color = "red")
 plt.text(.25,.85, 'steps = %r' % len(tracex), transform = ax.transAxes, color = "red")
 
-# run first minimization and plot
+# run second minimization and plot
 x0 = random.random()*1.1 + 0.1
 tracex = minimize(f, x0, ETA, STEP, PRECISION)
 tracey = [f(x) for x in tracex]
